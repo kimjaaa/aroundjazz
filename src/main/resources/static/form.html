@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>재즈바 등록하기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" id="main">
+   <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-default content-main">
+          <form name="jazzbar" method="post" action="/create">
+              <div class="form-group">
+                  <label for="name">재즈바 이름</label>
+                  <input class="form-control" id="name" name="name" placeholder="Jazzbar Name">
+              </div>
+              <div class="form-group">
+                  <label for="name">재즈바 영어 이름</label>
+                  <input class="form-control" id="enName" name="enName" placeholder="Jazzbar English Name">
+              </div>
+              <div class="form-group">
+                  <label for="address">주소</label>
+                  <input class="form-control" id="address" name="address" placeholder="Address">
+              </div>
+              <div class="form-group">
+                  <label for="local">지역</label>
+                  <input class="form-control" id="local" name="local" placeholder="JazzBar location">
+              </div>
+              <div class="form-group">
+                  <label for="contactNumber">연락처</label>
+                  <input class="form-control" id="contactNumber" name="contactNumber" placeholder="ContactNumber">
+              </div>
+              <div class="form-group">
+                  <label for="local">운영시간</label>
+                  <input class="form-control" id="operationTime" name="operationTime" placeholder="JazzBar 운영시간">
+              </div>
+              <div class="form-group">
+                  <label for="local">TimeTable</label>
+                  <input class="form-control" id="timetable" name="timetable" placeholder="공연시간표 링크">
+              </div>
+              </div>
+              <div class="form-group">
+                  <label for="local">공연비</label>
+                  <input class="form-control" id="fee" name="fee" placeholder="공연비">
+              </div>
+              <div class="form-group">
+                  <label for="local">메뉴</label>
+                  <input class="form-control" id="menu" name="menu" placeholder="메뉴">
+              </div>
+              
+         
+              <button type="submit" class="btn btn-success clearfix pull-right">등록하기</button>
+              <div class="clearfix" />
+          </form>
+        </div>
+    </div>
+</div>
+
+<!-- script references -->
+<script src="../js/jquery-2.2.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/scripts.js"></script>
+	</body>
+</html>

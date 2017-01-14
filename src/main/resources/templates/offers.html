@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>재즈카페 리스트</title>
+</head>
+<body>
+<div class="container" id="main">
+   <div class="col-md-10 col-md-offset-1">
+      <div class="panel panel-default">
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                    <th>Id</th> <th>재즈바 이름</th> <th>재즈바 영어 이름</th> <th>주소</th><th>연락처</th><th>지역</th><th>재즈바 운영시간</th><th>공연 시간표</th><th>공연비</th><th>메뉴</th><th></th>
+                </tr>
+              </thead>
+              <tbody>
+              	{{#jazzbars}}
+                <tr>
+                    <th scope="row">{{id}}</th> <td>{{name}}</td> <td>{{enName}}</td> <td>{{address}}</td> <td>{{contactNumber}}</td><td>{{local}}</td><td>{{operationTime}}</td><td>{{timetable}}</td><td>{{fee}}</td><td>{{menu}}</td><td><a href="/show.html" class="btn btn-success" role="button">상세보기</a></td>
+                </tr>
+                {{/jazzbars}}
+              </tbody>
+          </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

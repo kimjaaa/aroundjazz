@@ -1,0 +1,1 @@
+-- insert into jazzbar(address, city) values ('', '');
