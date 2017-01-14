@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.aroundjazz.model.Jazzbar;
@@ -29,7 +30,10 @@ public class StoreController {
 	}
 
 	@GetMapping("/offers/{id}")
-	public String show(Model model){
+	public String show(@PathVariable Long id, Model model){
+		Jazzbar jazzbar = jazzbarRepository.findOne(id);
+		model.addAttribute("jazzbar", jazzbar);
+		
 		return "show";
 	}
 }
